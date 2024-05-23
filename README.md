@@ -1,5 +1,7 @@
 # Sistema de trazabilidad de frutas exportadas: Implementación
 
+![trazabilidad](https://github.com/luislopez-dev/Traceability-app-CLI/assets/48783255/b850db45-5f58-4983-afb0-c28a7eb45cbb)
+
 ## Requeriemientos técnicos:
 
 1. Docker
