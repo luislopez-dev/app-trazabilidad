@@ -1,6 +1,6 @@
 #pragma once
 
-class AdministradorController
+class Lote
 {
 public:
     
