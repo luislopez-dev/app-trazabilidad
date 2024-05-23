@@ -3,5 +3,5 @@
 class ControlCalidadMenu
 {
 public:
-    
+    static void showMenu();
 };

@@ -3,5 +3,5 @@
 class DistribucionMenu
 {
 public:
-    
+    static void showMenu();
 };

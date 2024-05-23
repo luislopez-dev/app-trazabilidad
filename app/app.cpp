@@ -1,5 +1,10 @@
 #include <iostream>
 
+#include "ControlCalidad/Presentation/ControlCalidadMenu.h"
+#include "CosechaProduccion/Presentation/CosechaProduccionMenu.h"
+#include "Distribucion/Presentation/DistribucionMenu.h"
+#include "LogisticaTransporte/LogisticaTransporteMenu.h"
+
 using namespace std;
 
 int option;
@@ -28,21 +33,20 @@ int main() {
 
     switch (option)
     {
-        case 1:
-            cout << "COSECHA Y PRODUCCION";
-            break;
-        case 2:
-            cout << "CONTROL DE CALIDAD";
-            break;
-        case 3:
-            cout << "LOGISTICA Y TRANSPORTE";
-            break;
-        case 4:
-            cout <<  "DISTRIBUCION";   
-            break;
-        default:
-            cout << "OPCION INVALIDA";
+    case 1:
+        CosechaProduccionMenu::showMenu();
+        break;
+    case 2:
+        ControlCalidadMenu::showMenu();
+        break;
+    case 3:
+        DistribucionMenu::showMenu();
+        break;
+    case 4:
+        LogisticaTransporteMenu::showMenu();
+        break;
+    default:
+        cout << "OPCION INVALIDA";
     }
-    
     return 0;
 }

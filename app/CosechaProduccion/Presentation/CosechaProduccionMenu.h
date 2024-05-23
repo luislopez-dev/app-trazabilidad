@@ -2,6 +2,7 @@
 
 class CosechaProduccionMenu
 {
-public:
+    public:
+        static void showMenu();
     
 };
