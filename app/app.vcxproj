@@ -150,6 +150,7 @@
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.cpp" />
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.cpp" />
     <ClCompile Include="ControlCalidad\Infrastructure\Data\Connection.cpp" />
+    <ClCompile Include="ControlCalidad\Presentation\ControlCalidadMenu.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\GerenteFinca.cpp" />
@@ -159,17 +160,21 @@
     <ClCompile Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Validations\LotesValidations.cpp" />
     <ClCompile Include="CosechaProduccion\Infrastructure\Data\Connection.cpp" />
+    <ClCompile Include="CosechaProduccion\Presentation\CosechaProduccionMenu.cpp" />
     <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
     <ClCompile Include="Distribucion\Business\Models\PuertoContenedores.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\Data\Connection.cpp" />
+    <ClCompile Include="Distribucion\Presentation\DistribucionMenu.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\GerenteLogistica.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Vehiculo.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Viaje.cpp" />
     <ClCompile Include="LogisticaTransporte\Infrastructure\Data\Connection.cpp" />
+    <ClCompile Include="LogisticaTransporte\LogisticaTransporteMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ControlCalidad\Application\Services\" />
+    <Folder Include="ControlCalidad\Business\Exceptions\" />
     <Folder Include="ControlCalidad\Presentation\Actions\" />
     <Folder Include="ControlCalidad\Presentation\Controllers\" />
     <Folder Include="CosechaProduccion\Application\Services\" />
@@ -204,6 +209,7 @@
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.h" />
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.h" />
     <ClInclude Include="ControlCalidad\Infrastructure\Data\Connection.h" />
+    <ClInclude Include="ControlCalidad\Presentation\ControlCalidadMenu.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\GerenteFinca.h" />
@@ -213,14 +219,17 @@
     <ClInclude Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.h" />
     <ClInclude Include="CosechaProduccion\Business\Validations\LotesValidations.h" />
     <ClInclude Include="CosechaProduccion\Infrastructure\Data\Connection.h" />
+    <ClInclude Include="CosechaProduccion\Presentation\CosechaProduccionMenu.h" />
     <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
     <ClInclude Include="Distribucion\Business\Models\PuertoContenedores.h" />
     <ClInclude Include="Distribucion\Infrastructure\Data\Connection.h" />
+    <ClInclude Include="Distribucion\Presentation\DistribucionMenu.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\GerenteLogistica.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Vehiculo.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Viaje.h" />
     <ClInclude Include="LogisticaTransporte\Infrastructure\Data\Connection.h" />
+    <ClInclude Include="LogisticaTransporte\LogisticaTransporteMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
