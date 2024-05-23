@@ -161,6 +161,7 @@
     <ClCompile Include="CosechaProduccion\Infrastructure\Data\Connection.cpp" />
     <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
     <ClCompile Include="Distribucion\Business\Models\PuertoContenedores.cpp" />
+    <ClCompile Include="Distribucion\Infrastructure\Data\Connection.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\GerenteLogistica.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Vehiculo.cpp" />
@@ -178,7 +179,6 @@
     <Folder Include="Distribucion\Application\Services\" />
     <Folder Include="Distribucion\Business\Validations\" />
     <Folder Include="Distribucion\Infrastructure\DAO\" />
-    <Folder Include="Distribucion\Infrastructure\Data\" />
     <Folder Include="Distribucion\Presentation\Actions\" />
     <Folder Include="Distribucion\Presentation\Controllers\" />
     <Folder Include="LogisticaTransporte\Application\Services\" />
@@ -215,6 +215,7 @@
     <ClInclude Include="CosechaProduccion\Infrastructure\Data\Connection.h" />
     <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
     <ClInclude Include="Distribucion\Business\Models\PuertoContenedores.h" />
+    <ClInclude Include="Distribucion\Infrastructure\Data\Connection.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\GerenteLogistica.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Vehiculo.h" />
