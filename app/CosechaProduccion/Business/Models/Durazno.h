@@ -6,12 +6,12 @@ class Durazno
 {
     public:
         string color;
-        string tamaño;
+        string tamano;
 
         string get_color() const;
         void set_color(const string& color);
-        string get_tamaño() const;
-        void set_tamaño(const string& tamaño);
+        string get_tamano() const;
+        void set_tamano(const string& tamano);
 };
 
 
