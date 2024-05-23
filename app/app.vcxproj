@@ -144,6 +144,11 @@
     <ClCompile Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.cpp" />
     <ClCompile Include="ControlCalidad\Business\Validations\PlantaValidations.cpp" />
     <ClCompile Include="ControlCalidad\Business\Validations\PruebasLaboratorioValidations.cpp" />
+    <ClCompile Include="ControlCalidad\Infrastructure\DAO\BodegaAlimentosDAO.cpp" />
+    <ClCompile Include="ControlCalidad\Infrastructure\DAO\GerentePlantaDAO.cpp" />
+    <ClCompile Include="ControlCalidad\Infrastructure\DAO\InspeccionCalidadDAO.cpp" />
+    <ClCompile Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.cpp" />
+    <ClCompile Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\GerenteFinca.cpp" />
@@ -162,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ControlCalidad\Application\Services\" />
-    <Folder Include="ControlCalidad\Infrastructure\DAO\" />
     <Folder Include="ControlCalidad\Infrastructure\Data\" />
     <Folder Include="ControlCalidad\Presentation\Actions\" />
     <Folder Include="ControlCalidad\Presentation\Controllers\" />
@@ -194,6 +198,11 @@
     <ClInclude Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.h" />
     <ClInclude Include="ControlCalidad\Business\Validations\PlantaValidations.h" />
     <ClInclude Include="ControlCalidad\Business\Validations\PruebasLaboratorioValidations.h" />
+    <ClInclude Include="ControlCalidad\Infrastructure\DAO\BodegaAlimentosDAO.h" />
+    <ClInclude Include="ControlCalidad\Infrastructure\DAO\GerentePlantaDAO.h" />
+    <ClInclude Include="ControlCalidad\Infrastructure\DAO\InspeccionCalidadDAO.h" />
+    <ClInclude Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.h" />
+    <ClInclude Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\GerenteFinca.h" />
