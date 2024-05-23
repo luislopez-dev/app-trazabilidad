@@ -1,64 +1,74 @@
-#include <stdlib.h>
+#include <mysql_driver.h>
+#include <mysql_connection.h>
+#include <cppconn/statement.h>
+#include <cppconn/prepared_statement.h>
+#include <cppconn/resultset.h>
+#include <cppconn/exception.h>
 #include <iostream>
 
-#include "mysql_connection.h"
-#include <cppconn/driver.h>
-#include <cppconn/exception.h>
-#include <cppconn/prepared_statement.h>
-using namespace std;
+int main() {
+    try {
+        // Crear instancia del driver
+        sql::mysql::MySQL_Driver *driver;
+        sql::Connection *con;
+        sql::Statement *stmt;
+        sql::PreparedStatement *pstmt;
+        sql::ResultSet *res;
 
-//for demonstration only. never save your password in the code!
-const string server = "tcp://yourservername.mysql.database.azure.com:3306";
-const string username = "username@servername";
-const string password = "yourpassword";
+        driver = sql::mysql::get_mysql_driver_instance();
 
-int main()
-{
-	sql::Driver* driver;
-	sql::Connection* con;
-	sql::Statement* stmt;
-	sql::PreparedStatement* pstmt;
+        // Conectar a la base de datos
+        con = driver->connect("tcp://127.0.0.1:3306", "root", "");
 
-	try
-	{
-		driver = get_driver_instance();
-		con = driver->connect(server, username, password);
-	}
-	catch (sql::SQLException e)
-	{
-		cout << "Could not connect to server. Error message: " << e.what() << endl;
-		system("pause");
-		exit(1);
-	}
+        // Conectar a una base de datos específica
+        con->setSchema("mydb");
 
-	//please create database "quickstartdb" ahead of time
-	con->setSchema("quickstartdb");
+        // Crear un objeto Statement
+        stmt = con->createStatement();
 
-	stmt = con->createStatement();
-	stmt->execute("DROP TABLE IF EXISTS inventory");
-	cout << "Finished dropping table (if existed)" << endl;
-	stmt->execute("CREATE TABLE inventory (id serial PRIMARY KEY, name VARCHAR(50), quantity INTEGER);");
-	cout << "Finished creating table" << endl;
-	delete stmt;
+        // Crear una tabla
+        stmt->execute("CREATE TABLE IF NOT EXISTS MiTabla ("
+                      "id INT AUTO_INCREMENT, "
+                      "nombre VARCHAR(255) NOT NULL, "
+                      "edad INT NOT NULL, "
+                      "PRIMARY KEY (id))");
+        std::cout << "Tabla creada exitosamente." << std::endl;
 
-	pstmt = con->prepareStatement("INSERT INTO inventory(name, quantity) VALUES(?,?)");
-	pstmt->setString(1, "banana");
-	pstmt->setInt(2, 150);
-	pstmt->execute();
-	cout << "One row inserted." << endl;
+        // Insertar datos en la tabla
+        pstmt = con->prepareStatement("INSERT INTO MiTabla(nombre, edad) VALUES (?, ?)");
+        pstmt->setString(1, "Juan");
+        pstmt->setInt(2, 30);
+        pstmt->execute();
 
-	pstmt->setString(1, "orange");
-	pstmt->setInt(2, 154);
-	pstmt->execute();
-	cout << "One row inserted." << endl;
+        pstmt->setString(1, "Maria");
+        pstmt->setInt(2, 25);
+        pstmt->execute();
 
-	pstmt->setString(1, "apple");
-	pstmt->setInt(2, 100);
-	pstmt->execute();
-	cout << "One row inserted." << endl;
+        pstmt->setString(1, "Carlos");
+        pstmt->setInt(2, 35);
+        pstmt->execute();
 
-	delete pstmt;
-	delete con;
-	system("pause");
-	return 0;
+        std::cout << "Datos insertados exitosamente." << std::endl;
+
+        // Consultar datos de la tabla
+        res = stmt->executeQuery("SELECT id, nombre, edad FROM MiTabla");
+
+        // Imprimir los datos
+        while (res->next()) {
+            std::cout << "ID: " << res->getInt("id") 
+                      << ", Nombre: " << res->getString("nombre") 
+                      << ", Edad: " << res->getInt("edad") << std::endl;
+        }
+
+        // Limpiar
+        delete res;
+        delete pstmt;
+        delete stmt;
+        delete con;
+    } catch (sql::SQLException &e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return 1;
+    }
+
+    return 0;
 }

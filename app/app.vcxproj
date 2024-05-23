@@ -134,6 +134,81 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="app.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Models\BodegaAlimentos.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Models\GerentePlanta.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Models\InspeccionCalidad.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Models\Planta.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Models\PruebasLaboratorio.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Validations\BodegaAlimentosValidations.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Validations\GerentePlantaValidations.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Validations\PlantaValidations.cpp" />
+    <ClCompile Include="ControlCalidad\Business\Validations\PruebasLaboratorioValidations.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Models\GerenteFinca.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Models\Lotes.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Validations\DuraznoValidations.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Validations\FincaValidations.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.cpp" />
+    <ClCompile Include="CosechaProduccion\Business\Validations\LotesValidations.cpp" />
+    <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
+    <ClCompile Include="Distribucion\Business\Models\PuertoContenedores.cpp" />
+    <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
+    <ClCompile Include="LogisticaTransporte\Business\Models\GerenteLogistica.cpp" />
+    <ClCompile Include="LogisticaTransporte\Business\Models\Vehiculo.cpp" />
+    <ClCompile Include="LogisticaTransporte\Business\Models\Viaje.cpp" />
+    <ClCompile Include="LogisticaTransporte\Infrastructure\Data\Connection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ControlCalidad\Application\Services\" />
+    <Folder Include="ControlCalidad\Infrastructure\DAO\" />
+    <Folder Include="ControlCalidad\Infrastructure\Data\" />
+    <Folder Include="ControlCalidad\Presentation\Actions\" />
+    <Folder Include="ControlCalidad\Presentation\Controllers\" />
+    <Folder Include="CosechaProduccion\Application\Services\" />
+    <Folder Include="CosechaProduccion\Infrastructure\DAO\" />
+    <Folder Include="CosechaProduccion\Infrastructure\Data\" />
+    <Folder Include="CosechaProduccion\Presentation\Actions\" />
+    <Folder Include="CosechaProduccion\Presentation\Controllers\" />
+    <Folder Include="Distribucion\Application\Services\" />
+    <Folder Include="Distribucion\Business\Validations\" />
+    <Folder Include="Distribucion\Infrastructure\DAO\" />
+    <Folder Include="Distribucion\Infrastructure\Data\" />
+    <Folder Include="Distribucion\Presentation\Actions\" />
+    <Folder Include="Distribucion\Presentation\Controllers\" />
+    <Folder Include="LogisticaTransporte\Application\Services\" />
+    <Folder Include="LogisticaTransporte\Business\Validations\" />
+    <Folder Include="LogisticaTransporte\Infrastructure\DAO\" />
+    <Folder Include="LogisticaTransporte\Presentation\Actions\" />
+    <Folder Include="LogisticaTransporte\Presentation\Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControlCalidad\Business\Models\BodegaAlimentos.h" />
+    <ClInclude Include="ControlCalidad\Business\Models\GerentePlanta.h" />
+    <ClInclude Include="ControlCalidad\Business\Models\InspeccionCalidad.h" />
+    <ClInclude Include="ControlCalidad\Business\Models\Planta.h" />
+    <ClInclude Include="ControlCalidad\Business\Models\PruebasLaboratorio.h" />
+    <ClInclude Include="ControlCalidad\Business\Validations\BodegaAlimentosValidations.h" />
+    <ClInclude Include="ControlCalidad\Business\Validations\GerentePlantaValidations.h" />
+    <ClInclude Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.h" />
+    <ClInclude Include="ControlCalidad\Business\Validations\PlantaValidations.h" />
+    <ClInclude Include="ControlCalidad\Business\Validations\PruebasLaboratorioValidations.h" />
+    <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
+    <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
+    <ClInclude Include="CosechaProduccion\Business\Models\GerenteFinca.h" />
+    <ClInclude Include="CosechaProduccion\Business\Models\Lotes.h" />
+    <ClInclude Include="CosechaProduccion\Business\Validations\DuraznoValidations.h" />
+    <ClInclude Include="CosechaProduccion\Business\Validations\FincaValidations.h" />
+    <ClInclude Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.h" />
+    <ClInclude Include="CosechaProduccion\Business\Validations\LotesValidations.h" />
+    <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
+    <ClInclude Include="Distribucion\Business\Models\PuertoContenedores.h" />
+    <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
+    <ClInclude Include="LogisticaTransporte\Business\Models\GerenteLogistica.h" />
+    <ClInclude Include="LogisticaTransporte\Business\Models\Vehiculo.h" />
+    <ClInclude Include="LogisticaTransporte\Business\Models\Viaje.h" />
+    <ClInclude Include="LogisticaTransporte\Infrastructure\Data\Connection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
