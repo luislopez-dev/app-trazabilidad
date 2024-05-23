@@ -149,6 +149,7 @@
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\InspeccionCalidadDAO.cpp" />
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.cpp" />
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.cpp" />
+    <ClCompile Include="ControlCalidad\Infrastructure\Data\Connection.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\GerenteFinca.cpp" />
@@ -167,7 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ControlCalidad\Application\Services\" />
-    <Folder Include="ControlCalidad\Infrastructure\Data\" />
     <Folder Include="ControlCalidad\Presentation\Actions\" />
     <Folder Include="ControlCalidad\Presentation\Controllers\" />
     <Folder Include="CosechaProduccion\Application\Services\" />
@@ -203,6 +203,7 @@
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\InspeccionCalidadDAO.h" />
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.h" />
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.h" />
+    <ClInclude Include="ControlCalidad\Infrastructure\Data\Connection.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\GerenteFinca.h" />
