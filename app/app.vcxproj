@@ -158,6 +158,7 @@
     <ClCompile Include="CosechaProduccion\Business\Validations\FincaValidations.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Validations\LotesValidations.cpp" />
+    <ClCompile Include="CosechaProduccion\Infrastructure\Data\Connection.cpp" />
     <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
     <ClCompile Include="Distribucion\Business\Models\PuertoContenedores.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
@@ -172,7 +173,6 @@
     <Folder Include="ControlCalidad\Presentation\Controllers\" />
     <Folder Include="CosechaProduccion\Application\Services\" />
     <Folder Include="CosechaProduccion\Infrastructure\DAO\" />
-    <Folder Include="CosechaProduccion\Infrastructure\Data\" />
     <Folder Include="CosechaProduccion\Presentation\Actions\" />
     <Folder Include="CosechaProduccion\Presentation\Controllers\" />
     <Folder Include="Distribucion\Application\Services\" />
@@ -212,6 +212,7 @@
     <ClInclude Include="CosechaProduccion\Business\Validations\FincaValidations.h" />
     <ClInclude Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.h" />
     <ClInclude Include="CosechaProduccion\Business\Validations\LotesValidations.h" />
+    <ClInclude Include="CosechaProduccion\Infrastructure\Data\Connection.h" />
     <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
     <ClInclude Include="Distribucion\Business\Models\PuertoContenedores.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
