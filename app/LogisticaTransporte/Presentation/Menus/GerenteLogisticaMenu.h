@@ -1,6 +1,6 @@
 #pragma once
 
-class LogisticaTransporteMenu
+class GerenteLogisticaMenu
 {
 public:
     static void showMenu();

@@ -133,6 +133,84 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Administracion\Business\Models\Administrador.cpp" />
+    <ClCompile Include="Administracion\Presentation\Controllers\AdministradorController.cpp" />
+    <ClCompile Include="Administracion\Presentation\Menus\AdministracionMenu.cpp">
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Release\</BrowseInformationFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Release\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Release\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <ObjectFileName>x64\Release\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Release\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Release\app.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Release\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <TrackerLogDirectory>x64\Release\app.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Release\</XMLDocumentationFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>STATIC_CONCPP;PROCENDEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\50241\Downloads\mysql-connector-c++-8.4.0-winx64\include\jdbc</AdditionalIncludeDirectories>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
     <ClCompile Include="app.cpp" />
     <ClCompile Include="ControlCalidad\Business\Models\BodegaAlimentos.cpp" />
     <ClCompile Include="ControlCalidad\Business\Models\GerentePlanta.cpp" />
@@ -150,7 +228,9 @@
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.cpp" />
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.cpp" />
     <ClCompile Include="ControlCalidad\Infrastructure\Data\Connection.cpp" />
-    <ClCompile Include="ControlCalidad\Presentation\ControlCalidadMenu.cpp" />
+    <ClCompile Include="ControlCalidad\Presentation\Menus\GerentePlantaMenu.cpp" />
+    <ClCompile Include="ControlCalidad\Presentation\Menus\InspectorCalidadMenu.cpp" />
+    <ClCompile Include="ControlCalidad\Presentation\Menus\TecnicoLaboratorioMenu.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\GerenteFinca.cpp" />
@@ -160,39 +240,119 @@
     <ClCompile Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Validations\LotesValidations.cpp" />
     <ClCompile Include="CosechaProduccion\Infrastructure\Data\Connection.cpp" />
-    <ClCompile Include="CosechaProduccion\Presentation\CosechaProduccionMenu.cpp" />
+    <ClCompile Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.cpp">
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Release\</BrowseInformationFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Release\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Release\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <ObjectFileName>x64\Release\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Release\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Release\app.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Release\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <TrackerLogDirectory>x64\Release\app.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <XMLDocumentationFileName>x64\Release\</XMLDocumentationFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>STATIC_CONCPP;PROCENDEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\50241\Downloads\mysql-connector-c++-8.4.0-winx64\include\jdbc</AdditionalIncludeDirectories>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
     <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
+    <ClCompile Include="Distribucion\Business\Models\GerenteDistribucion.cpp" />
     <ClCompile Include="Distribucion\Business\Models\PuertoContenedores.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\Data\Connection.cpp" />
-    <ClCompile Include="Distribucion\Presentation\DistribucionMenu.cpp" />
+    <ClCompile Include="Distribucion\Presentation\Menus\GerenteDistribucionMenu.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\GerenteLogistica.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Vehiculo.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Viaje.cpp" />
     <ClCompile Include="LogisticaTransporte\Infrastructure\Data\Connection.cpp" />
-    <ClCompile Include="LogisticaTransporte\LogisticaTransporteMenu.cpp" />
+    <ClCompile Include="LogisticaTransporte\Presentation\Menus\ConductorMenu.cpp" />
+    <ClCompile Include="LogisticaTransporte\Presentation\Menus\GerenteLogisticaMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Administracion\Application\" />
+    <Folder Include="Administracion\Business\" />
+    <Folder Include="Administracion\Infrastructure\" />
     <Folder Include="ControlCalidad\Application\Services\" />
     <Folder Include="ControlCalidad\Business\Exceptions\" />
     <Folder Include="ControlCalidad\Presentation\Actions\" />
     <Folder Include="ControlCalidad\Presentation\Controllers\" />
     <Folder Include="CosechaProduccion\Application\Services\" />
     <Folder Include="CosechaProduccion\Infrastructure\DAO\" />
-    <Folder Include="CosechaProduccion\Presentation\Actions\" />
     <Folder Include="CosechaProduccion\Presentation\Controllers\" />
     <Folder Include="Distribucion\Application\Services\" />
     <Folder Include="Distribucion\Business\Validations\" />
     <Folder Include="Distribucion\Infrastructure\DAO\" />
-    <Folder Include="Distribucion\Presentation\Actions\" />
     <Folder Include="Distribucion\Presentation\Controllers\" />
     <Folder Include="LogisticaTransporte\Application\Services\" />
     <Folder Include="LogisticaTransporte\Business\Validations\" />
     <Folder Include="LogisticaTransporte\Infrastructure\DAO\" />
-    <Folder Include="LogisticaTransporte\Presentation\Actions\" />
     <Folder Include="LogisticaTransporte\Presentation\Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Administracion\Business\Models\Administrador.h" />
+    <ClInclude Include="Administracion\Presentation\Controllers\AdministradorController.h" />
+    <ClInclude Include="Administracion\Presentation\Menus\AdministracionMenu.h" />
     <ClInclude Include="ControlCalidad\Business\Models\BodegaAlimentos.h" />
     <ClInclude Include="ControlCalidad\Business\Models\GerentePlanta.h" />
     <ClInclude Include="ControlCalidad\Business\Models\InspeccionCalidad.h" />
@@ -209,7 +369,9 @@
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.h" />
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.h" />
     <ClInclude Include="ControlCalidad\Infrastructure\Data\Connection.h" />
-    <ClInclude Include="ControlCalidad\Presentation\ControlCalidadMenu.h" />
+    <ClInclude Include="ControlCalidad\Presentation\Menus\GerentePlantaMenu.h" />
+    <ClInclude Include="ControlCalidad\Presentation\Menus\InspectorCalidadMenu.h" />
+    <ClInclude Include="ControlCalidad\Presentation\Menus\TecnicoLaboratorioMenu.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\GerenteFinca.h" />
@@ -219,17 +381,19 @@
     <ClInclude Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.h" />
     <ClInclude Include="CosechaProduccion\Business\Validations\LotesValidations.h" />
     <ClInclude Include="CosechaProduccion\Infrastructure\Data\Connection.h" />
-    <ClInclude Include="CosechaProduccion\Presentation\CosechaProduccionMenu.h" />
+    <ClInclude Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.h" />
     <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
+    <ClInclude Include="Distribucion\Business\Models\GerenteDistribucion.h" />
     <ClInclude Include="Distribucion\Business\Models\PuertoContenedores.h" />
     <ClInclude Include="Distribucion\Infrastructure\Data\Connection.h" />
-    <ClInclude Include="Distribucion\Presentation\DistribucionMenu.h" />
+    <ClInclude Include="Distribucion\Presentation\Menus\GerenteDistribucionMenu.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\GerenteLogistica.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Vehiculo.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Viaje.h" />
     <ClInclude Include="LogisticaTransporte\Infrastructure\Data\Connection.h" />
-    <ClInclude Include="LogisticaTransporte\LogisticaTransporteMenu.h" />
+    <ClInclude Include="LogisticaTransporte\Presentation\Menus\ConductorMenu.h" />
+    <ClInclude Include="LogisticaTransporte\Presentation\Menus\GerenteLogisticaMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

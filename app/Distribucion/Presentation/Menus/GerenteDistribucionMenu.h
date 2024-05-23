@@ -1,6 +1,6 @@
 #pragma once
 
-class DistribucionMenu
+class GerenteDistribucionMenu
 {
 public:
     static void showMenu();

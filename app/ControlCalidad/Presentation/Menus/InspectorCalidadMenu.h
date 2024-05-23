@@ -1,6 +1,6 @@
 #pragma once
 
-class ControlCalidadMenu
+class InspectorCalidadMenu
 {
 public:
     static void showMenu();
