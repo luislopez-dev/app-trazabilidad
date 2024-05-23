@@ -334,8 +334,8 @@
     <ClCompile Include="LogisticaTransporte\Business\Models\Viaje.cpp" />
     <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\ConductorDAO.cpp" />
     <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\GerenteLogisticaDAO.cpp" />
-    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\Vehiculo.cpp" />
-    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\Viaje.cpp" />
+    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\VehiculoDAO.cpp" />
+    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\ViajeDAO.cpp" />
     <ClCompile Include="LogisticaTransporte\Infrastructure\Data\Connection.cpp" />
     <ClCompile Include="LogisticaTransporte\Presentation\Menus\ConductorMenu.cpp" />
     <ClCompile Include="LogisticaTransporte\Presentation\Menus\GerenteLogisticaMenu.cpp" />
@@ -403,8 +403,8 @@
     <ClInclude Include="LogisticaTransporte\Business\Models\Viaje.h" />
     <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\ConductorDAO.h" />
     <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\GerenteLogisticaDAO.h" />
-    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\Vehiculo.h" />
-    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\Viaje.h" />
+    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\VehiculoDAO.h" />
+    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\ViajeDAO.h" />
     <ClInclude Include="LogisticaTransporte\Infrastructure\Data\Connection.h" />
     <ClInclude Include="LogisticaTransporte\Presentation\Menus\ConductorMenu.h" />
     <ClInclude Include="LogisticaTransporte\Presentation\Menus\GerenteLogisticaMenu.h" />

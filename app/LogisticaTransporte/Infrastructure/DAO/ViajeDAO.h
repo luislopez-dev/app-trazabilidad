@@ -1,10 +1,12 @@
-#pragma once
+﻿#pragma once
 #include <vector>
 
-class Viaje
+#include "../../Business/Models/Viaje.h"
+
+class ViajeDAO
 {
 public:
-    static void save(Viaje finca);
+    static void save(Viaje viaje);
     
     static Viaje findById(int id);
     
