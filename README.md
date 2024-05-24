@@ -11,3 +11,16 @@ https://docs.google.com/document/d/1-ipGfziGiXHSFN7oHwO0t4z-UrvDz8ozr4isBizp2Cw/
 Visualice el archivo html/index.html en su navegador
 
 ## Video de demostración
+
+## Comandos
+
+1. x
+2. x
+3. x
+4. x
+5. x
+6. x
+7. x
+8. x
+9. x
+10. x
