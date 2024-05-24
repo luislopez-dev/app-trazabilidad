@@ -14,7 +14,9 @@ https://github.com/luislopez-dev/Traceability-app-CLI/edit/main/README.md
 
 ## Video de demostración
 
-## Comandos
+## Manual de usuario
+
+### Comandos
 
 1. x
 2. x
