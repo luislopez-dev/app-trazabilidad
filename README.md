@@ -8,9 +8,7 @@ https://docs.google.com/document/d/1-ipGfziGiXHSFN7oHwO0t4z-UrvDz8ozr4isBizp2Cw/
 
 ## Documentación técnica:
 
-Visualice el archivo <strong>html/index.html</strong> en su navegador o visualice el siguiente archvio pdf:
-https://github.com/luislopez-dev/Traceability-app-CLI/edit/main/README.md
-
+https://github.com/luislopez-dev/app-trazabilidad-documentacion-tecnica
 
 ## Video de demostración
 
