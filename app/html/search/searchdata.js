@@ -1,18 +1,21 @@
 var indexSectionsWithContent =
 {
-  0: "adefirsty",
-  1: "defist"
+  0: "gps~",
+  1: "p",
+  2: "gps~"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "pages"
+  1: "classes",
+  2: "functions"
 };
 
 var indexSectionLabels =
 {
   0: "Todos",
-  1: "Páginas"
+  1: "Clases",
+  2: "Funciones"
 };
 
