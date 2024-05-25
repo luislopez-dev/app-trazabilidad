@@ -133,7 +133,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Administracion\Business\Models\Administrador.cpp" />
     <ClCompile Include="Administracion\Presentation\Menus\AdministracionMenu.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
@@ -215,7 +214,6 @@
     <ClCompile Include="ControlCalidad\Business\Models\GerentePlanta.cpp" />
     <ClCompile Include="ControlCalidad\Business\Models\InspeccionCalidad.cpp" />
     <ClCompile Include="ControlCalidad\Business\Models\Planta.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Models\PruebasLaboratorio.cpp" />
     <ClCompile Include="ControlCalidad\Business\Validations\BodegaAlimentosValidations.cpp" />
     <ClCompile Include="ControlCalidad\Business\Validations\GerentePlantaValidations.cpp" />
     <ClCompile Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.cpp" />
@@ -319,8 +317,8 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
+    <ClCompile Include="Distribucion\Business\Models\Embarcacion.cpp" />
     <ClCompile Include="Distribucion\Business\Models\GerenteDistribucion.cpp" />
-    <ClCompile Include="Distribucion\Business\Models\PuertoContenedores.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\DAO\DistribucionDAO.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\DAO\GerenteDistribucion.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\DAO\PuertoContenedoresDAO.cpp" />
@@ -415,6 +413,7 @@
   <ItemGroup>
     <Folder Include="Administracion\Application\" />
     <Folder Include="Administracion\Business\" />
+    <Folder Include="Administracion\Business\Models\" />
     <Folder Include="Administracion\Infrastructure\" />
     <Folder Include="ControlCalidad\Application\Services\" />
     <Folder Include="ControlCalidad\Business\Exceptions\" />
@@ -425,13 +424,11 @@
     <Folder Include="LogisticaTransporte\Business\Validations\" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Administracion\Business\Models\Administrador.h" />
     <ClInclude Include="Administracion\Presentation\Menus\AdministracionMenu.h" />
     <ClInclude Include="ControlCalidad\Business\Models\BodegaAlimentos.h" />
     <ClInclude Include="ControlCalidad\Business\Models\GerentePlanta.h" />
     <ClInclude Include="ControlCalidad\Business\Models\InspeccionCalidad.h" />
     <ClInclude Include="ControlCalidad\Business\Models\Planta.h" />
-    <ClInclude Include="ControlCalidad\Business\Models\PruebasLaboratorio.h" />
     <ClInclude Include="ControlCalidad\Business\Validations\BodegaAlimentosValidations.h" />
     <ClInclude Include="ControlCalidad\Business\Validations\GerentePlantaValidations.h" />
     <ClInclude Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.h" />
@@ -460,8 +457,8 @@
     <ClInclude Include="CosechaProduccion\Infrastructure\DAO\LoteDAO.h" />
     <ClInclude Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.h" />
     <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
+    <ClInclude Include="Distribucion\Business\Models\Embarcacion.h" />
     <ClInclude Include="Distribucion\Business\Models\GerenteDistribucion.h" />
-    <ClInclude Include="Distribucion\Business\Models\PuertoContenedores.h" />
     <ClInclude Include="Distribucion\Infrastructure\DAO\DistribucionDAO.h" />
     <ClInclude Include="Distribucion\Infrastructure\DAO\GerenteDistribucion.h" />
     <ClInclude Include="Distribucion\Infrastructure\DAO\PuertoContenedoresDAO.h" />
