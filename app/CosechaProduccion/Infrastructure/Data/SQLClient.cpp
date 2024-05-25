@@ -17,7 +17,7 @@ Connection* SQLClient::connect()
 
         con = driver->connect("tcp://127.0.0.1:3306", "root", "");
 
-        con->setSchema("mydb");
+        con->setSchema("app_trazabilidad");
 
         return con;
        
