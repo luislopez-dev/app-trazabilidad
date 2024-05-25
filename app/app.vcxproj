@@ -242,7 +242,6 @@
     <ClCompile Include="CosechaProduccion\Infrastructure\DAO\FincaDAO.cpp" />
     <ClCompile Include="CosechaProduccion\Infrastructure\DAO\GerenteFincaDAO.cpp" />
     <ClCompile Include="CosechaProduccion\Infrastructure\DAO\LoteDAO.cpp" />
-    <ClCompile Include="CosechaProduccion\Infrastructure\Data\SQLClient.cpp" />
     <ClCompile Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
@@ -459,7 +458,6 @@
     <ClInclude Include="CosechaProduccion\Infrastructure\DAO\FincaDAO.h" />
     <ClInclude Include="CosechaProduccion\Infrastructure\DAO\GerenteFincaDAO.h" />
     <ClInclude Include="CosechaProduccion\Infrastructure\DAO\LoteDAO.h" />
-    <ClInclude Include="CosechaProduccion\Infrastructure\Data\SQLClient.h" />
     <ClInclude Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.h" />
     <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
     <ClInclude Include="Distribucion\Business\Models\GerenteDistribucion.h" />
