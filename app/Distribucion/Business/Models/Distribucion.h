@@ -7,6 +7,7 @@ public:
     int id;
     std::string destino;
     std::string fecha_reparticion;
+    std::string carrier;
 
     int get_id() const;
     void set_id(int id);
