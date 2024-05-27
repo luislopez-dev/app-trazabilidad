@@ -29,7 +29,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Durazno`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Durazno` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Color` VARCHAR(45) NULL,
   `Tamaño` VARCHAR(45) NULL,
   `Precio` DECIMAL(10,2) NULL,
@@ -49,7 +49,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Lotes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Lotes` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Unidades` INT NOT NULL,
   `Descripcion` LONGTEXT NULL,
   `Creacion` DATETIME NULL,
@@ -84,7 +84,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Gerente_Finca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Gerente_Finca` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   `Finca_ID` INT NOT NULL,
   PRIMARY KEY (`ID`),
@@ -101,7 +101,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Vehiculo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Vehiculo` (
-  `Placa` INT NOT NULL,
+  `Placa` INT NOT NULL AUTO_INCREMENT,
   `Modelo` VARCHAR(45) NULL,
   `Marca` VARCHAR(45) NULL,
   PRIMARY KEY (`Placa`))
@@ -112,7 +112,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Gerente_Logistica`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Gerente_Logistica` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   PRIMARY KEY (`ID`))
 ENGINE = InnoDB;
@@ -122,7 +122,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Conductor`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Conductor` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   PRIMARY KEY (`ID`))
 ENGINE = InnoDB;
@@ -132,7 +132,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Viaje`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Viaje` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Vehiculo_ID` INT NULL,
   `Gerente_Logistica_ID` INT NOT NULL,
   `Conductor_ID` INT NOT NULL,
@@ -187,7 +187,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Planta`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Planta` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   `Direccion` VARCHAR(45) NULL,
   PRIMARY KEY (`ID`))
@@ -198,7 +198,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Gerente_Planta`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Gerente_Planta` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   `Planta_ID` INT NOT NULL,
   PRIMARY KEY (`ID`),
@@ -225,7 +225,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Inspeccion_Calidad`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Inspeccion_Calidad` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Planta_ID` INT NOT NULL,
   `Inspector_Calidad_ID` INT NOT NULL,
   `Fehca_Hora` DATETIME NULL,
@@ -251,7 +251,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Bodega_Alimentos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Bodega_Alimentos` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Planta_ID` INT NOT NULL,
   PRIMARY KEY (`ID`, `Planta_ID`),
   INDEX `fk_Alimentos_Bodega_Planta1_idx` (`Planta_ID` ASC),
@@ -290,7 +290,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Embarcacion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Embarcacion` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Salida` DATETIME NULL,
   `Llegada` DATETIME NULL,
   PRIMARY KEY (`ID`))
@@ -301,7 +301,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Gerente_Distribucion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Gerente_Distribucion` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -311,7 +311,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Distribucion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Distribucion` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Destino` VARCHAR(45) NULL,
   `Fecha_Reparticion` DATE NULL,
   `Gerente_Distribucion_id` INT NOT NULL,
