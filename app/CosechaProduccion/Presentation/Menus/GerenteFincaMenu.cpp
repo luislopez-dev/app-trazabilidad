@@ -1,39 +1,28 @@
 #include "GerenteFincaMenu.h"
 #include <iostream>
-
-#include "../../Application/Services/DuraznoService.h"
-#include "../../Business/Models/Durazno.h"
-
 using namespace std;
 
 void CosechaProduccionMenu::showMenu()
 {
-    int option;
-    Durazno durazno;
-    string color;
-    string peso;
+    system("cls");
+
+    cout << "===========================================\n";
+
+    cout << " BIENVENIDO GERENTE DE FINCA" << endl;
+
+    cout << "===========================================\n";
+
+    cout << "MENU:" << endl << endl;
     
-    cout << "===========================================\n";
+    cout << "1. REGISTRAR DURAZNO" << endl;
 
-    cout << " BIENVENIDO GERENTE DE FINCA \n";
+    cout << "2. REGISTRAR LOTES" << endl;
 
-    cout << "OPCIONES: " << endl;
+    cout << "3. VISUALIZAR DURAZNOS" << endl;
 
-    cout << "1. Registrar durazno " << endl;
+    cout << "4. VISUALIZAR LOTES" << endl;
 
-    cin >> option;
+    cout << "5. MARCAR LOTES COMO LISTOS PARA INSPECCION DE CALIDAD" << endl;
 
-    switch (option)
-    {
-        case 1:
-            cout << "Ingrese el color del durazno: ";
-            cin >> color;
-            durazno.set_color(color);
-            cout << "Ingrese el peso del durazno: ";
-            cin >> peso;
-            durazno.set_tamano(peso);
-            DuraznoService::saveDurazno(durazno);
-    }
-
-    cout << "===========================================\n";
+    cout << "6. VISUALIZAR REGISTRO DE LOTES LISTOS PARA INSPECCION DE CALIDAD" << endl;
 }

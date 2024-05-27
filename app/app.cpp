@@ -29,7 +29,7 @@ int main() {
     cout << "4. Inspector de Calidad" << endl;
     cout << "5. Gerente de Logistica" << endl;
     cout << "6. Conductor" << endl;
-    cout << "7. Gerente de Distribucion" << endl;
+    cout << "7. Gerente de Distribucion" << endl << endl;
     cout << "INGRESE UNA OPCION: ";
     cin >> user;
 

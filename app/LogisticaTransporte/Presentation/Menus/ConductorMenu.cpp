@@ -6,9 +6,15 @@ using namespace std;
 
 void ConductorMenu::showMenu()
 {
-    cout << "===========================================\n";
-
-    cout << " BIENVENIDO GERENTE DE LOGISTICA \n";
+    system("cls");
 
     cout << "===========================================\n";
+
+    cout << "BIENVENIDO CONDUCTOR \n";
+
+    cout << "===========================================\n";
+
+    cout << "1. CONFIRMAR LOTES A TRANSPORTAR \n";
+    
+    cout << "2. REGISTRAR HORA Y FECHA DE LLEGADA AL DESTINO PLANIFICDO \n";
 }

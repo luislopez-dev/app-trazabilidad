@@ -6,10 +6,6 @@
 
 https://docs.google.com/document/d/1-ipGfziGiXHSFN7oHwO0t4z-UrvDz8ozr4isBizp2Cw/edit?usp=sharing
 
-## Documentación técnica:
-
-https://luislopez-dev.github.io/app-trazabilidad-documentacion-tecnica/
-
 ## Video de demostración
 
 ## Manual de usuario

@@ -226,7 +226,6 @@
     <ClCompile Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.cpp" />
     <ClCompile Include="ControlCalidad\Presentation\Menus\GerentePlantaMenu.cpp" />
     <ClCompile Include="ControlCalidad\Presentation\Menus\InspectorCalidadMenu.cpp" />
-    <ClCompile Include="ControlCalidad\Presentation\Menus\TecnicoLaboratorioMenu.cpp" />
     <ClCompile Include="CosechaProduccion\Application\Services\DuraznoService.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
     <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
@@ -441,7 +440,6 @@
     <ClInclude Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.h" />
     <ClInclude Include="ControlCalidad\Presentation\Menus\GerentePlantaMenu.h" />
     <ClInclude Include="ControlCalidad\Presentation\Menus\InspectorCalidadMenu.h" />
-    <ClInclude Include="ControlCalidad\Presentation\Menus\TecnicoLaboratorioMenu.h" />
     <ClInclude Include="CosechaProduccion\Application\Services\DuraznoService.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
     <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
