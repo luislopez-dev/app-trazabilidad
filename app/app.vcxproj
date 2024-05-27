@@ -320,8 +320,8 @@
     <ClCompile Include="Distribucion\Business\Models\Embarcacion.cpp" />
     <ClCompile Include="Distribucion\Business\Models\GerenteDistribucion.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\DAO\DistribucionDAO.cpp" />
+    <ClCompile Include="Distribucion\Infrastructure\DAO\EmbarcacionDAO.cpp" />
     <ClCompile Include="Distribucion\Infrastructure\DAO\GerenteDistribucion.cpp" />
-    <ClCompile Include="Distribucion\Infrastructure\DAO\PuertoContenedoresDAO.cpp" />
     <ClCompile Include="Distribucion\Presentation\Menus\GerenteDistribucionMenu.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
     <ClCompile Include="LogisticaTransporte\Business\Models\GerenteLogistica.cpp" />
@@ -460,8 +460,8 @@
     <ClInclude Include="Distribucion\Business\Models\Embarcacion.h" />
     <ClInclude Include="Distribucion\Business\Models\GerenteDistribucion.h" />
     <ClInclude Include="Distribucion\Infrastructure\DAO\DistribucionDAO.h" />
+    <ClInclude Include="Distribucion\Infrastructure\DAO\EmbarcacionDAO.h" />
     <ClInclude Include="Distribucion\Infrastructure\DAO\GerenteDistribucion.h" />
-    <ClInclude Include="Distribucion\Infrastructure\DAO\PuertoContenedoresDAO.h" />
     <ClInclude Include="Distribucion\Presentation\Menus\GerenteDistribucionMenu.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
     <ClInclude Include="LogisticaTransporte\Business\Models\GerenteLogistica.h" />

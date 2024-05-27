@@ -3,8 +3,8 @@
 #include "Administracion/Presentation/Menus/AdministracionMenu.h"
 #include "ControlCalidad/Presentation/Menus/GerentePlantaMenu.h"
 #include "ControlCalidad/Presentation/Menus/InspectorCalidadMenu.h"
-#include "ControlCalidad/Presentation/Menus/TecnicoLaboratorioMenu.h"
 #include "CosechaProduccion/Presentation/Menus/GerenteFincaMenu.h"
+#include "Distribucion/Presentation/Menus/GerenteDistribucionMenu.h"
 #include "LogisticaTransporte/Presentation/Menus/ConductorMenu.h"
 #include "LogisticaTransporte/Presentation/Menus/GerenteLogisticaMenu.h"
 
@@ -27,11 +27,9 @@ int main() {
     cout << "2. Gerente de Finca" << endl;
     cout << "3. Gerente de Planta" << endl;
     cout << "4. Inspector de Calidad" << endl;
-    cout << "5. Tecnico de Laboratorio" << endl;
-    cout << "6. Gerente de Logistica" << endl;
-    cout << "7. Conductor" << endl;
-    cout << "8. Gerente de Distribucion" << endl;
-
+    cout << "5. Gerente de Logistica" << endl;
+    cout << "6. Conductor" << endl;
+    cout << "7. Gerente de Distribucion" << endl;
     cout << "INGRESE UNA OPCION: ";
     cin >> user;
 
@@ -50,16 +48,13 @@ int main() {
             InspectorCalidadMenu::showMenu();
             break;
         case 5:
-            TecnicoLaboratorioMenu::showMenu();
-            break;
-        case 6:
             GerenteLogisticaMenu::showMenu();
             break;
-        case 7:
+        case 6:
             ConductorMenu::showMenu();
             break;
-        case 8:
-            GerentePlantaMenu::showMenu();
+        case 7:
+            GerenteDistribucionMenu::showMenu();
         default:
             cout << "OPCION INCORRECTA";
     }
