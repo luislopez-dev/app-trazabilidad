@@ -18,7 +18,7 @@ USE `app_trazabilidad` ;
 -- Table `app_trazabilidad`.`Finca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Finca` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   `Dirección` LONGTEXT NULL,
   PRIMARY KEY (`ID`))
