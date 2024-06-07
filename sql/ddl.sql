@@ -29,8 +29,8 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Lote`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Lote` (
-  `ID` VARCHAR(45) NOT NULL,
-  `Unidades` INT NOT NULL AUTO_INCREMENT,
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `Unidades` INT NOT NULL,
   `Ubicacion_Actual` VARCHAR(45) NULL,
   `Finca_ID` INT NOT NULL,
   `Creacion` DATETIME NULL,
