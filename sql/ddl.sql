@@ -212,19 +212,18 @@ CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`durazno` (
   `Precio` DECIMAL(10,2) NULL DEFAULT NULL,
   `Finca_ID` INT(11) NOT NULL,
   `Fecha_Cosecha` DATE NULL DEFAULT NULL,
-  `lote_ID` INT(11) NOT NULL,
-  `finca_ID` INT(11) NOT NULL,
+  `Lote_ID` INT(11) NOT NULL,
   PRIMARY KEY (`ID`),
   INDEX `fk_Durazno_Finca1_idx` (`Finca_ID` ASC),
-  INDEX `fk_durazno_lotes1_idx` (`lote_ID` ASC, `finca_ID` ASC),
+  INDEX `fk_durazno_lotes1_idx` (`Lote_ID` ASC),
   CONSTRAINT `fk_Durazno_Finca1`
     FOREIGN KEY (`Finca_ID`)
     REFERENCES `app_trazabilidad`.`finca` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_durazno_lotes1`
-    FOREIGN KEY (`lote_ID` , `finca_ID`)
-    REFERENCES `app_trazabilidad`.`lotes` (`ID` , `finca_ID`)
+    FOREIGN KEY (`Lote_ID`)
+    REFERENCES `app_trazabilidad`.`lotes` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
