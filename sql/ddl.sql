@@ -18,7 +18,7 @@ USE `app_trazabilidad` ;
 -- Table `app_trazabilidad`.`Finca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Finca` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   `Direccion` VARCHAR(45) NULL,
   PRIMARY KEY (`ID`))
@@ -29,7 +29,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Durazno`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Durazno` (
-  `ID` INT NOT NULL,
+  `ID` INT NOT NULL AUTO_INCREMENT,
   `Color` VARCHAR(45) NULL,
   `Tamaño` VARCHAR(45) NULL,
   PRIMARY KEY (`ID`))
@@ -40,7 +40,7 @@ ENGINE = InnoDB;
 -- Table `app_trazabilidad`.`Lote`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Lote` (
-  `Unidades` INT NOT NULL,
+  `Unidades` INT NOT NULL AUTO_INCREMENT,
   `Ubicacion_Actual` VARCHAR(45) NULL,
   `Finca_ID` INT NOT NULL,
   `Durazno_ID` INT NOT NULL,
