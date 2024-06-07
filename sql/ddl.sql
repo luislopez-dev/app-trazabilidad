@@ -5,19 +5,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema app_trazabilidad
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema app_trazabilidad
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `app_trazabilidad` DEFAULT CHARACTER SET utf8 ;
+USE `app_trazabilidad` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Finca`
+-- Table `app_trazabilidad`.`Finca`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Finca` (
+CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Finca` (
   `ID` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NULL,
   `Direccion` VARCHAR(45) NULL,
@@ -26,9 +26,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Lote`
+-- Table `app_trazabilidad`.`Lote`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Lote` (
+CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Lote` (
   `ID` VARCHAR(45) NOT NULL,
   `Unidades` INT NOT NULL AUTO_INCREMENT,
   `Ubicacion_Actual` VARCHAR(45) NULL,
@@ -38,16 +38,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Lote` (
   PRIMARY KEY (`ID`),
   CONSTRAINT `fk_Lote_Finca`
     FOREIGN KEY (`Finca_ID`)
-    REFERENCES `mydb`.`Finca` (`ID`)
+    REFERENCES `app_trazabilidad`.`Finca` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Durazno`
+-- Table `app_trazabilidad`.`Durazno`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Durazno` (
+CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Durazno` (
   `ID` INT NOT NULL AUTO_INCREMENT,
   `Color` VARCHAR(45) NULL,
   `Tamaño` VARCHAR(45) NULL,
@@ -60,12 +60,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Durazno` (
   INDEX `fk_Durazno_Finca1_idx` (`Finca_ID` ASC),
   CONSTRAINT `fk_Durazno_Lote1`
     FOREIGN KEY (`Lote_ID`)
-    REFERENCES `mydb`.`Lote` (`Unidades`)
+    REFERENCES `app_trazabilidad`.`Lote` (`Unidades`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Durazno_Finca1`
     FOREIGN KEY (`Finca_ID`)
-    REFERENCES `mydb`.`Finca` (`ID`)
+    REFERENCES `app_trazabilidad`.`Finca` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
