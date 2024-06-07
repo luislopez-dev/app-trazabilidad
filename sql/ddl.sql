@@ -26,35 +26,37 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `app_trazabilidad`.`Durazno`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Durazno` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
-  `Color` VARCHAR(45) NULL,
-  `Tamaño` VARCHAR(45) NULL,
-  PRIMARY KEY (`ID`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `app_trazabilidad`.`Lote`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Lote` (
   `Unidades` INT NOT NULL AUTO_INCREMENT,
   `Ubicacion_Actual` VARCHAR(45) NULL,
   `Finca_ID` INT NOT NULL,
-  `Durazno_ID` INT NOT NULL,
+  `Creacion` DATETIME NULL,
   PRIMARY KEY (`Unidades`),
   INDEX `fk_Lote_Finca_idx` (`Finca_ID` ASC),
-  INDEX `fk_Lote_Durazno1_idx` (`Durazno_ID` ASC),
   CONSTRAINT `fk_Lote_Finca`
     FOREIGN KEY (`Finca_ID`)
     REFERENCES `app_trazabilidad`.`Finca` (`ID`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Lote_Durazno1`
-    FOREIGN KEY (`Durazno_ID`)
-    REFERENCES `app_trazabilidad`.`Durazno` (`ID`)
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `app_trazabilidad`.`Durazno`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Durazno` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `Color` VARCHAR(45) NULL,
+  `Tamaño` VARCHAR(45) NULL,
+  `fecha_cosecha` DATETIME NULL,
+  `Lote_ID` INT NOT NULL,
+  PRIMARY KEY (`ID`),
+  INDEX `fk_Durazno_Lote1_idx` (`Lote_ID` ASC),
+  CONSTRAINT `fk_Durazno_Lote1`
+    FOREIGN KEY (`Lote_ID`)
+    REFERENCES `app_trazabilidad`.`Lote` (`Unidades`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
