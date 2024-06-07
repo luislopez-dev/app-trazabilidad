@@ -52,11 +52,19 @@ CREATE TABLE IF NOT EXISTS `app_trazabilidad`.`Durazno` (
   `Tamaño` VARCHAR(45) NULL,
   `fecha_cosecha` DATETIME NULL,
   `Lote_ID` INT NOT NULL,
+  `Precio` DECIMAL(10,2) NULL,
+  `Finca_ID` INT NOT NULL,
   PRIMARY KEY (`ID`),
   INDEX `fk_Durazno_Lote1_idx` (`Lote_ID` ASC),
+  INDEX `fk_Durazno_Finca1_idx` (`Finca_ID` ASC),
   CONSTRAINT `fk_Durazno_Lote1`
     FOREIGN KEY (`Lote_ID`)
     REFERENCES `app_trazabilidad`.`Lote` (`Unidades`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Durazno_Finca1`
+    FOREIGN KEY (`Finca_ID`)
+    REFERENCES `app_trazabilidad`.`Finca` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
