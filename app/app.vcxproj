@@ -145,7 +145,6 @@
     <ClCompile Include="CosechaProduccion\DAO\FincaDAO.cpp" />
     <ClCompile Include="CosechaProduccion\DAO\LoteDAO.cpp" />
     <ClCompile Include="CosechaProduccion\Menus\Components\EnviarDuraznosInspeccionCalidad.cpp" />
-    <ClCompile Include="CosechaProduccion\Menus\Components\MostrarDuraznosEnFincaComponent.cpp" />
     <ClCompile Include="CosechaProduccion\Menus\Components\MostrarInformacionFincaComponent.cpp" />
     <ClCompile Include="CosechaProduccion\Menus\Components\RegistroDuraznoComponent.cpp" />
     <ClCompile Include="CosechaProduccion\Menus\GerenteFincaMenu.cpp" />
@@ -259,7 +258,6 @@
     <ClInclude Include="CosechaProduccion\DAO\FincaDAO.h" />
     <ClInclude Include="CosechaProduccion\DAO\LoteDAO.h" />
     <ClInclude Include="CosechaProduccion\Menus\Components\EnviarDuraznosInspeccionCalidad.h" />
-    <ClInclude Include="CosechaProduccion\Menus\Components\MostrarDuraznosEnFincaComponent.h" />
     <ClInclude Include="CosechaProduccion\Menus\Components\MostrarInformacionFincaComponent.h" />
     <ClInclude Include="CosechaProduccion\Menus\Components\RegistroDuraznoComponent.h" />
     <ClInclude Include="CosechaProduccion\Menus\GerenteFincaMenu.h" />

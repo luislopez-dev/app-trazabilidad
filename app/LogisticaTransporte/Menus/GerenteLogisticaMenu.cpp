@@ -8,7 +8,7 @@ using namespace std;
 
 void GerenteLogisticaMenu::showMenu()
 {
-    // system("cls");
+    system("cls");
 
     int option;
 
@@ -31,5 +31,6 @@ void GerenteLogisticaMenu::showMenu()
             break;
         default:
             cout << "OPCION INCORRECTA";
+        GerenteLogisticaMenu::showMenu();
     }
 }

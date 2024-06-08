@@ -32,11 +32,11 @@ Distribucion DistribucionDAO::getLast()
 {
     try
     {
-        Distribucion * distribucion = new Distribucion;
+        Distribucion *  distribucion = new Distribucion;
     
         std::shared_ptr<sql::Connection> conn = SQLClient::getInstance().getConnection();
     
-        sql::PreparedStatement* pstmt = conn->prepareStatement("SELECT * FROM Embarcacion ORDER BY id DESC LIMIT 1");
+        sql::PreparedStatement* pstmt = conn->prepareStatement("SELECT * FROM Distribución ORDER BY id DESC LIMIT 1");
 
         sql::ResultSet* res = pstmt->executeQuery();
 

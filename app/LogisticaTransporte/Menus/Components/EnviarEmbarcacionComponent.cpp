@@ -7,7 +7,7 @@
 
 void EnviarEmbarcacionComponent::showMenu()
 {
-    // system("cls");
+    system("cls");
 
     std::string puerto_base;
     

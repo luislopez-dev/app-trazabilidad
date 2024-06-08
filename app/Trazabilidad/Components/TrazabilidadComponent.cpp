@@ -1,4 +1,6 @@
 ﻿#include "TrazabilidadComponent.h"
+
+#include <iomanip>
 #include <iostream>
 
 #include "../../ControlCalidad/DAO/InspeccionCalidadDAO.h"
@@ -14,8 +16,18 @@
 #include "../../LogisticaTransporte/DAO/EmbarcacionDAO.h"
 #include "../../LogisticaTransporte/Models/Embarcacion.h"
 
+// Marco de ganancia: precio-venta - costo unidad (durazno)
+double get_marco_ganancia() {
+
+    Durazno* durazno = new Durazno;
+
+    return  9.75 - durazno->get_precio();
+}
+
 void TrazabilidadComponent::show()
 {
+    system("cls");
+    
     // lote exportado
     Lote lote = LoteDAO::getLast();
 
@@ -37,14 +49,35 @@ void TrazabilidadComponent::show()
     std::cout << "----------------------------------------" << std::endl;
     std::cout << "TRAZABILIDAD DE LOTE EXPORTADO" << std::endl;
     std::cout << "----------------------------------------" << std::endl;
+    
+    std::cout << "PROCESO: COSECHA Y PRODUCCION" << endl;
+    std::cout << "FECHA: " << lote.get_creacion() << endl;
+    std::cout << "RESPONSABLE: GERNETE DE COSECHA Y PRODUCCION"<< endl;
+    std::cout << "ESTADO: COMPLETADO"<< endl;
+    std::cout << "LUGAR: "  << finca.get_nombre() << ", " << finca.get_direccion() << endl;
 
-    std::cout << "|PROCESO | FECHA | RESPONSABLE | ESTADO | LUGAR | MARCO DE GANANCIA|" << std::endl;
+    std::cout << "--------------------------------------------" << endl;
+    
+    std::cout << "PROCESO: CONTROL DE CALIDAD" << endl;
+    std::cout << "FECHA: " << inspeccion.get_fecha() << endl;
+    std::cout << "RESPONSABLE: GERENTE DE CONTROL DE CALIDAD"<< endl;
+    std::cout << "ESTADO: COMPLETADO"<< endl;
+    std::cout << "LUGAR: "<< planta.get_nombre() << ", " << planta.get_direccion() << endl;
 
-    std::cout << "|COSECHA PRODUCCION | " << lote.get_creacion() << " | Gerente de Cosecha y Produccion | COMPLETADO | " << finca.get_nombre() << ", " << finca.get_direccion() << " | MARCO DE GANANCIA|" << std::endl;
+    std::cout << "--------------------------------------------" << endl;
 
-    std::cout << "|CONTROL DE CALIDAD | " << inspeccion.get_fecha() << " | Gerente de Control de Calidad | COMPLETADO | " <<  planta.get_nombre() << ", " << planta.get_direccion() <<" | MARCO DE GANANCIA|" << std::endl;
+    std::cout << "PROCESO: EMBARCACION / EXPORTACION" << endl;
+    std::cout << "FECHA: " << embarcacion.get_fecha_salida() << endl;
+    std::cout << "RESPONSABLE: GERENTE DE LOGISTICA"<< endl;
+    std::cout << "ESTADO: COMPLETADO"<< endl;
+    std::cout << "LUGAR: " << embarcacion.get_puerto_base() << endl;
 
-    std::cout << "|EMBARCACION / EXPORTACION | "<< embarcacion.get_fecha_salida() << " | Gerente de Logistica | COMPLETADO | " << embarcacion.get_puerto_base() << " | MARCO DE GANANCIA|" << std::endl;
+    std::cout << "--------------------------------------------" << endl;
 
-    std::cout << "|DISTRIBUCION | " << distribucion.get_fecha_reparticion() <<" | Gerente de Distribucion | COMPLETADO | "<< distribucion.get_tienda_destino_nombre() << ", " << distribucion.get_tienda_destino_direccion() <<" | MARCO DE GANANCIA|" << std::endl;
+    std::cout << "PROCESO: DISTRIBUCION" << endl;
+    std::cout << "FECHA: " << distribucion.get_fecha_reparticion() << endl;
+    std::cout << "RESPONSABLE: GERENTE DE DISTRIBUCION"<< endl;
+    std::cout << "ESTADO: COMPLETADO"<< endl;
+    std::cout << "LUGAR: " << distribucion.get_tienda_destino_nombre() << ", " << distribucion.get_tienda_destino_direccion() << endl;
+    std::cout << "MARCO DE GANANCIA: Q" << get_marco_ganancia() << " por unidad" << endl;
 }

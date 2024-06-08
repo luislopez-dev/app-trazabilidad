@@ -49,7 +49,7 @@ InspeccionCalidad InspeccionCalidadDAO::getLast()
         if (res->next())
         {
             inspeccion->set_id(res->getInt("ID"));
-            inspeccion->set_fecha(res->getString("FECHA"));
+            inspeccion->set_fecha(res->getString("Fecha"));
 
             return *inspeccion;
         }

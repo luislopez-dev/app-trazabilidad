@@ -8,7 +8,7 @@ using namespace std;
 
 void RealizarDistribucionComponent::showMenu()
 {
-    // system("cls");
+    system("cls");
 
     Distribucion* distribucion = new Distribucion;
 

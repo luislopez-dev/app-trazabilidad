@@ -164,23 +164,19 @@ Lote LoteDAO::getLast()
 {
     try
     {
-        Lote* lote = new Lote;
+        Lote * lote = new Lote;
     
         shared_ptr<sql::Connection> conn = SQLClient::getInstance().getConnection();
     
-        sql::PreparedStatement* pstmt = conn->prepareStatement("SELECT * FROM Lote ORDER BY id DESC LIMIT 1");
+        sql::PreparedStatement* pstmt = conn->prepareStatement("SELECT Creacion FROM Lote ORDER BY id DESC LIMIT 1");
 
         sql::ResultSet* res = pstmt->executeQuery();
 
         if (res->next())
         {
-            lote->set_id(res->getInt("ID"));
-            lote->set_ubicacion_actual(res->getString("Ubicacion_Actual"));
             lote->set_creacion(res->getString("Creacion"));
-            lote->set_finca_id(res->getInt("Finca_ID"));
-            lote->set_embarcacion_id(res->getInt("Embarcacion_ID"));
-            lote->set_planta_control_calidad_id(res->getInt("Planta_Control_Calidad_Id"));
-            lote->set_distribucion_id(res->getInt("Distribucion_ID"));
+
+            return *lote;
         }
         else
         {

@@ -6,7 +6,7 @@ using namespace std;
 
 void GerenteDistribucionMenu::showMenu()
 {
-    // system("cls");
+    system("cls");
 
     int option;
 
@@ -32,5 +32,6 @@ void GerenteDistribucionMenu::showMenu()
 
         default:
             std::cout << "OPCION INCORRECTA.";
+            GerenteDistribucionMenu::showMenu();
     }
 }

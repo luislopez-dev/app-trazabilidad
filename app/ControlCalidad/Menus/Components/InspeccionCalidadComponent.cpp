@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-#include "../../../LogisticaTransporte/Menus/GerenteLogisticaMenu.h"
 #include "../../Models/InspeccionCalidad.h"
 #include "../../Services/InspeccionService.h"
 

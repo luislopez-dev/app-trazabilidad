@@ -10,7 +10,7 @@ void CosechaProduccionMenu::showMenu()
 {
     int option;
     
-    // system("cls");
+    system("cls");
 
     cout << "===========================================\n";
 
@@ -46,5 +46,6 @@ void CosechaProduccionMenu::showMenu()
         
         default:
             cout << "OPCION INCORRECTA";
+            CosechaProduccionMenu::showMenu();
     }
 }

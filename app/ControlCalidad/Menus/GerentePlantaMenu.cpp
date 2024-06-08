@@ -7,7 +7,7 @@ using namespace std;
 
 void GerentePlantaMenu::showMenu()
 {
-    // system("cls");
+    system("cls");
 
     int option;
     
@@ -33,5 +33,6 @@ void GerentePlantaMenu::showMenu()
 
         default:
             cout << "OPCION INCORRECTA.";
+            GerentePlantaMenu::showMenu();
     }
 }

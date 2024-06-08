@@ -9,6 +9,8 @@ void MostrarInformacionFincaComponent::showMenu()
 {
     Finca finca = FincaService::getFinca();
     
+    std::cout << "===================================" << std::endl;
+    
     std::cout << "INFORMACION DE FINCA: " << std::endl;
 
     std::cout << "NOMBRE: " <<  finca.get_nombre() << std::endl;
