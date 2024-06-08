@@ -192,4 +192,3 @@ Lote LoteDAO::getLast()
         cerr << "ERROR: " << e.what() << endl;
     }
 }
-

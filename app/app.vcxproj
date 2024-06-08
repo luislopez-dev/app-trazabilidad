@@ -135,9 +135,11 @@
   <ItemGroup>
     <ClCompile Include="app.cpp" />
     <ClCompile Include="ControlCalidad\DAO\InspeccionCalidadDAO.cpp" />
+    <ClCompile Include="ControlCalidad\DAO\PlantaControlCalidadDAO.cpp" />
     <ClCompile Include="ControlCalidad\Menus\Components\InspeccionCalidadComponent.cpp" />
     <ClCompile Include="ControlCalidad\Menus\GerentePlantaMenu.cpp" />
     <ClCompile Include="ControlCalidad\Models\InspeccionCalidad.cpp" />
+    <ClCompile Include="ControlCalidad\Models\PlantaControlCalidad.cpp" />
     <ClCompile Include="ControlCalidad\Services\InspeccionService.cpp" />
     <ClCompile Include="CosechaProduccion\DAO\DuraznoDAO.cpp" />
     <ClCompile Include="CosechaProduccion\DAO\FincaDAO.cpp" />
@@ -244,15 +246,14 @@
     </ClCompile>
     <ClCompile Include="Shared\Util\DateTime.cpp" />
     <ClCompile Include="Trazabilidad\Components\TrazabilidadComponent.cpp" />
-    <ClCompile Include="Trazabilidad\DAO\TrazabilidadDAO.cpp" />
-    <ClCompile Include="Trazabilidad\Models\Trazabilidad.cpp" />
-    <ClCompile Include="Trazabilidad\Services\TrazabilidadService.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ControlCalidad\DAO\InspeccionCalidadDAO.h" />
+    <ClInclude Include="ControlCalidad\DAO\PlantaControlCalidadDAO.h" />
     <ClInclude Include="ControlCalidad\Menus\Components\InspeccionCalidadComponent.h" />
     <ClInclude Include="ControlCalidad\Menus\GerentePlantaMenu.h" />
     <ClInclude Include="ControlCalidad\Models\InspeccionCalidad.h" />
+    <ClInclude Include="ControlCalidad\Models\PlantaControlCalidad.h" />
     <ClInclude Include="ControlCalidad\Services\InspeccionService.h" />
     <ClInclude Include="CosechaProduccion\DAO\DuraznoDAO.h" />
     <ClInclude Include="CosechaProduccion\DAO\FincaDAO.h" />
@@ -284,9 +285,6 @@
     <ClInclude Include="Shared\Database\SQLClient.h" />
     <ClInclude Include="Shared\Util\DateTime.h" />
     <ClInclude Include="Trazabilidad\Components\TrazabilidadComponent.h" />
-    <ClInclude Include="Trazabilidad\DAO\TrazabilidadDAO.h" />
-    <ClInclude Include="Trazabilidad\Models\Trazabilidad.h" />
-    <ClInclude Include="Trazabilidad\Services\TrazabilidadService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,4 +5,5 @@ class InspeccionCalidadDAO
 {
 public:
     static void save(InspeccionCalidad* inspeccion);
+    static InspeccionCalidad getLast();
 };

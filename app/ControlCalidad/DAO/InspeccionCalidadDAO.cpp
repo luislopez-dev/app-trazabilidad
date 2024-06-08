@@ -33,3 +33,33 @@ void InspeccionCalidadDAO::save(InspeccionCalidad* inspeccion)
         std::cerr << "Error: " << e.what() << std::endl;
     }
 }
+
+InspeccionCalidad InspeccionCalidadDAO::getLast()
+{
+    try
+    {
+        InspeccionCalidad * inspeccion = new InspeccionCalidad;
+    
+        std::shared_ptr<sql::Connection> conn = SQLClient::getInstance().getConnection();
+    
+        sql::PreparedStatement* pstmt = conn->prepareStatement("SELECT * FROM Inspeccion_Calidad ORDER BY id DESC LIMIT 1");
+
+        sql::ResultSet* res = pstmt->executeQuery();
+
+        if (res->next())
+        {
+            inspeccion->set_id(res->getInt("ID"));
+            inspeccion->set_fecha(res->getString("FECHA"));
+
+            return *inspeccion;
+        }
+        else
+        {
+            std::cout << "ERROR: AUN NO HAY INSPECCIONES REGISTRADAS" << std::endl;
+        }
+    }
+    catch (sql::SQLException& e)
+    {
+        std::cerr << "ERROR: " << e.what() << std::endl;
+    }
+}

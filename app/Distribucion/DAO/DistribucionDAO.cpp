@@ -27,3 +27,38 @@ void DistribucionDAO::save(Distribucion* distribucion)
         std::cerr << "ERROR: " << e.what() << std::endl;
     }
 }
+
+Distribucion DistribucionDAO::getLast()
+{
+    try
+    {
+        Distribucion * distribucion = new Distribucion;
+    
+        std::shared_ptr<sql::Connection> conn = SQLClient::getInstance().getConnection();
+    
+        sql::PreparedStatement* pstmt = conn->prepareStatement("SELECT * FROM Embarcacion ORDER BY id DESC LIMIT 1");
+
+        sql::ResultSet* res = pstmt->executeQuery();
+
+        if (res->next())
+        {
+            distribucion->set_id(res->getInt("ID"));
+
+            distribucion->set_tienda_destino_nombre(res->getString("Tienda_Destino_Nombre"));
+
+            distribucion->set_tienda_destino_direccion(res->getString("Tienda_Destino_Direccion"));
+
+            distribucion->set_fecha_reparticion(res->getString("Fecha_Reparticion"));
+            
+            return *distribucion;
+        }
+        else
+        {
+            std::cout << "ERROR: AUN NO HAY DISTRIBUCIONES REGISTRADAS." << std::endl;
+        }
+    }
+    catch (sql::SQLException& e)
+    {
+        std::cerr << "ERROR: " << e.what() << std::endl;
+    }
+}
