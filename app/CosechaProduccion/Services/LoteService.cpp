@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-#include "../DAO/DuraznoDAO.h"
 #include "../DAO/LoteDAO.h"
 
 int findLoteEnPlantaInspeccionID()
@@ -34,12 +33,11 @@ void LoteService::addLote(Lote* lote)
     LoteDAO::save(lote);
 }
 
-Lote LoteService::findById(int id)
+int LoteService::findLoteEnPlantaInspeccionID()
 {
-    return LoteDAO::findById(id);
 }
 
-std::list<Lote> LoteService::findAll()
+void LoteService::getLast()
 {
-    return LoteDAO::findAll();
+    
 }

@@ -21,4 +21,6 @@ public:
     static int findLoteListoParaEmbarcacionID();
 
     static int findLoteExportadoID();
+
+    static Lote getLast();
 };
