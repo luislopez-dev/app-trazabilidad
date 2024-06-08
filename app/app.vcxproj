@@ -133,205 +133,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Administracion\Presentation\Menus\AdministracionMenu.cpp">
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>x64\Release\</BrowseInformationFile>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <CompileAs>Default</CompileAs>
-      <ConformanceMode>true</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFuzzer>false</EnableFuzzer>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <GenerateModuleDependencies>false</GenerateModuleDependencies>
-      <GenerateSourceDependencies>false</GenerateSourceDependencies>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>x64\Release\</ModuleDependenciesFile>
-      <ModuleOutputFile>x64\Release\</ModuleOutputFile>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
-      <Optimization>MaxSpeed</Optimization>
-      <ObjectFileName>x64\Release\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>x64\Release\vc143.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>x64\Release\app.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>x64\Release\</SourceDependenciesFile>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <SupportJustMyCode>false</SupportJustMyCode>
-      <TrackerLogDirectory>x64\Release\app.tlog\</TrackerLogDirectory>
-      <TranslateIncludes>false</TranslateIncludes>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>x64\Release\</XMLDocumentationFileName>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <IntelJCCErratum>false</IntelJCCErratum>
-      <BuildStlModules>false</BuildStlModules>
-      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
-      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
-      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
-      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>STATIC_CONCPP;PROCENDEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\50241\Downloads\mysql-connector-c++-8.4.0-winx64\include\jdbc</AdditionalIncludeDirectories>
-      <LinkCompiled>true</LinkCompiled>
-    </ClCompile>
     <ClCompile Include="app.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Models\BodegaAlimentos.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Models\GerentePlanta.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Models\InspeccionCalidad.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Models\Planta.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Validations\BodegaAlimentosValidations.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Validations\GerentePlantaValidations.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Validations\PlantaValidations.cpp" />
-    <ClCompile Include="ControlCalidad\Business\Validations\PruebasLaboratorioValidations.cpp" />
-    <ClCompile Include="ControlCalidad\Infrastructure\DAO\BodegaAlimentosDAO.cpp" />
-    <ClCompile Include="ControlCalidad\Infrastructure\DAO\GerentePlantaDAO.cpp" />
-    <ClCompile Include="ControlCalidad\Infrastructure\DAO\InspeccionCalidadDAO.cpp" />
-    <ClCompile Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.cpp" />
-    <ClCompile Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.cpp" />
-    <ClCompile Include="ControlCalidad\Presentation\Menus\GerentePlantaMenu.cpp" />
-    <ClCompile Include="ControlCalidad\Presentation\Menus\InspectorCalidadMenu.cpp" />
-    <ClCompile Include="CosechaProduccion\Application\Services\DuraznoService.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Models\Durazno.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Models\Finca.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Models\GerenteFinca.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Models\Lote.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Validations\DuraznoValidations.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Validations\FincaValidations.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.cpp" />
-    <ClCompile Include="CosechaProduccion\Business\Validations\LotesValidations.cpp" />
-    <ClCompile Include="CosechaProduccion\Infrastructure\DAO\DuraznoDAO.cpp" />
-    <ClCompile Include="CosechaProduccion\Infrastructure\DAO\FincaDAO.cpp" />
-    <ClCompile Include="CosechaProduccion\Infrastructure\DAO\GerenteFincaDAO.cpp" />
-    <ClCompile Include="CosechaProduccion\Infrastructure\DAO\LoteDAO.cpp" />
-    <ClCompile Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.cpp">
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>x64\Release\</BrowseInformationFile>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <CompileAs>Default</CompileAs>
-      <ConformanceMode>true</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFuzzer>false</EnableFuzzer>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <GenerateModuleDependencies>false</GenerateModuleDependencies>
-      <GenerateSourceDependencies>false</GenerateSourceDependencies>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>x64\Release\</ModuleDependenciesFile>
-      <ModuleOutputFile>x64\Release\</ModuleOutputFile>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
-      <Optimization>MaxSpeed</Optimization>
-      <ObjectFileName>x64\Release\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>x64\Release\vc143.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>x64\Release\app.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>x64\Release\</SourceDependenciesFile>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <SupportJustMyCode>false</SupportJustMyCode>
-      <TrackerLogDirectory>x64\Release\app.tlog\</TrackerLogDirectory>
-      <TranslateIncludes>false</TranslateIncludes>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>x64\Release\</XMLDocumentationFileName>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <IntelJCCErratum>false</IntelJCCErratum>
-      <BuildStlModules>false</BuildStlModules>
-      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
-      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
-      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
-      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>STATIC_CONCPP;PROCENDEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\50241\Downloads\mysql-connector-c++-8.4.0-winx64\include\jdbc</AdditionalIncludeDirectories>
-      <LinkCompiled>true</LinkCompiled>
-    </ClCompile>
-    <ClCompile Include="Distribucion\Business\Models\Distribucion.cpp" />
-    <ClCompile Include="Distribucion\Business\Models\Embarcacion.cpp" />
-    <ClCompile Include="Distribucion\Business\Models\GerenteDistribucion.cpp" />
-    <ClCompile Include="Distribucion\Infrastructure\DAO\DistribucionDAO.cpp" />
-    <ClCompile Include="Distribucion\Infrastructure\DAO\EmbarcacionDAO.cpp" />
-    <ClCompile Include="Distribucion\Infrastructure\DAO\GerenteDistribucion.cpp" />
-    <ClCompile Include="Distribucion\Presentation\Menus\GerenteDistribucionMenu.cpp" />
-    <ClCompile Include="LogisticaTransporte\Business\Models\Conductor.cpp" />
-    <ClCompile Include="LogisticaTransporte\Business\Models\GerenteLogistica.cpp" />
-    <ClCompile Include="LogisticaTransporte\Business\Models\Vehiculo.cpp" />
-    <ClCompile Include="LogisticaTransporte\Business\Models\Viaje.cpp" />
-    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\ConductorDAO.cpp" />
-    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\GerenteLogisticaDAO.cpp" />
-    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\VehiculoDAO.cpp" />
-    <ClCompile Include="LogisticaTransporte\Infrastructure\DAO\ViajeDAO.cpp" />
-    <ClCompile Include="LogisticaTransporte\Presentation\Menus\ConductorMenu.cpp" />
-    <ClCompile Include="LogisticaTransporte\Presentation\Menus\GerenteLogisticaMenu.cpp" />
+    <ClCompile Include="ControlCalidad\DAO\InspeccionCalidadDAO.cpp" />
+    <ClCompile Include="ControlCalidad\Menus\Components\InspeccionCalidadComponent.cpp" />
+    <ClCompile Include="ControlCalidad\Menus\GerentePlantaMenu.cpp" />
+    <ClCompile Include="ControlCalidad\Models\InspeccionCalidad.cpp" />
+    <ClCompile Include="ControlCalidad\Services\InspeccionService.cpp" />
+    <ClCompile Include="CosechaProduccion\DAO\DuraznoDAO.cpp" />
+    <ClCompile Include="CosechaProduccion\DAO\FincaDAO.cpp" />
+    <ClCompile Include="CosechaProduccion\DAO\LoteDAO.cpp" />
+    <ClCompile Include="CosechaProduccion\Menus\Components\EnviarDuraznosInspeccionCalidad.cpp" />
+    <ClCompile Include="CosechaProduccion\Menus\Components\MostrarDuraznosEnFincaComponent.cpp" />
+    <ClCompile Include="CosechaProduccion\Menus\Components\MostrarInformacionFincaComponent.cpp" />
+    <ClCompile Include="CosechaProduccion\Menus\Components\RegistroDuraznoComponent.cpp" />
+    <ClCompile Include="CosechaProduccion\Menus\GerenteFincaMenu.cpp" />
+    <ClCompile Include="CosechaProduccion\Models\Durazno.cpp" />
+    <ClCompile Include="CosechaProduccion\Models\Finca.cpp" />
+    <ClCompile Include="CosechaProduccion\Models\Lote.cpp" />
+    <ClCompile Include="CosechaProduccion\Services\DuraznoService.cpp" />
+    <ClCompile Include="CosechaProduccion\Services\FincaService.cpp" />
+    <ClCompile Include="CosechaProduccion\Services\LoteService.cpp" />
+    <ClCompile Include="Distribucion\DAO\DistribucionDAO.cpp" />
+    <ClCompile Include="Distribucion\Menus\Components\RealizarDistribucionComponent.cpp" />
+    <ClCompile Include="Distribucion\Menus\GerenteDistribucionMenu.cpp" />
+    <ClCompile Include="Distribucion\Models\Distribucion.cpp" />
+    <ClCompile Include="Distribucion\Models\GerenteDistribucion.cpp" />
+    <ClCompile Include="Distribucion\Services\DistribucionService.cpp" />
+    <ClCompile Include="LogisticaTransporte\DAO\EmbarcacionDAO.cpp" />
+    <ClCompile Include="LogisticaTransporte\Menus\Components\EnviarEmbarcacionComponent.cpp" />
+    <ClCompile Include="LogisticaTransporte\Menus\GerenteLogisticaMenu.cpp" />
+    <ClCompile Include="LogisticaTransporte\Models\Embarcacion.cpp" />
+    <ClCompile Include="LogisticaTransporte\Services\EmbarcacionService.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Shared\Database\Database.cpp" />
     <ClCompile Include="Shared\Database\SQLClient.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
@@ -408,70 +242,51 @@
       <AdditionalIncludeDirectories>C:\Users\50241\Downloads\mysql-connector-c++-8.4.0-winx64\include\jdbc</AdditionalIncludeDirectories>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="Shared\Util\DateTime.cpp" />
+    <ClCompile Include="Trazabilidad\Components\TrazabilidadComponent.cpp" />
+    <ClCompile Include="Trazabilidad\DAO\TrazabilidadDAO.cpp" />
+    <ClCompile Include="Trazabilidad\Models\Trazabilidad.cpp" />
+    <ClCompile Include="Trazabilidad\Services\TrazabilidadService.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Administracion\Application\" />
-    <Folder Include="Administracion\Business\" />
-    <Folder Include="Administracion\Business\Models\" />
-    <Folder Include="Administracion\Infrastructure\" />
-    <Folder Include="ControlCalidad\Application\Services\" />
-    <Folder Include="ControlCalidad\Business\Exceptions\" />
-    <Folder Include="ControlCalidad\Presentation\Actions\" />
-    <Folder Include="Distribucion\Application\Services\" />
-    <Folder Include="Distribucion\Business\Validations\" />
-    <Folder Include="LogisticaTransporte\Application\Services\" />
-    <Folder Include="LogisticaTransporte\Business\Validations\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Administracion\Presentation\Menus\AdministracionMenu.h" />
-    <ClInclude Include="ControlCalidad\Business\Models\BodegaAlimentos.h" />
-    <ClInclude Include="ControlCalidad\Business\Models\GerentePlanta.h" />
-    <ClInclude Include="ControlCalidad\Business\Models\InspeccionCalidad.h" />
-    <ClInclude Include="ControlCalidad\Business\Models\Planta.h" />
-    <ClInclude Include="ControlCalidad\Business\Validations\BodegaAlimentosValidations.h" />
-    <ClInclude Include="ControlCalidad\Business\Validations\GerentePlantaValidations.h" />
-    <ClInclude Include="ControlCalidad\Business\Validations\InspeccionCalidadValidations.h" />
-    <ClInclude Include="ControlCalidad\Business\Validations\PlantaValidations.h" />
-    <ClInclude Include="ControlCalidad\Business\Validations\PruebasLaboratorioValidations.h" />
-    <ClInclude Include="ControlCalidad\Infrastructure\DAO\BodegaAlimentosDAO.h" />
-    <ClInclude Include="ControlCalidad\Infrastructure\DAO\GerentePlantaDAO.h" />
-    <ClInclude Include="ControlCalidad\Infrastructure\DAO\InspeccionCalidadDAO.h" />
-    <ClInclude Include="ControlCalidad\Infrastructure\DAO\PlantaDAO.h" />
-    <ClInclude Include="ControlCalidad\Infrastructure\DAO\PruebasLaboratorioDAO.h" />
-    <ClInclude Include="ControlCalidad\Presentation\Menus\GerentePlantaMenu.h" />
-    <ClInclude Include="ControlCalidad\Presentation\Menus\InspectorCalidadMenu.h" />
-    <ClInclude Include="CosechaProduccion\Application\Services\DuraznoService.h" />
-    <ClInclude Include="CosechaProduccion\Business\Models\Durazno.h" />
-    <ClInclude Include="CosechaProduccion\Business\Models\Finca.h" />
-    <ClInclude Include="CosechaProduccion\Business\Models\GerenteFinca.h" />
-    <ClInclude Include="CosechaProduccion\Business\Models\Lote.h" />
-    <ClInclude Include="CosechaProduccion\Business\Validations\DuraznoValidations.h" />
-    <ClInclude Include="CosechaProduccion\Business\Validations\FincaValidations.h" />
-    <ClInclude Include="CosechaProduccion\Business\Validations\GerenteFincaValidations.h" />
-    <ClInclude Include="CosechaProduccion\Business\Validations\LotesValidations.h" />
-    <ClInclude Include="CosechaProduccion\Infrastructure\DAO\DuraznoDAO.h" />
-    <ClInclude Include="CosechaProduccion\Infrastructure\DAO\FincaDAO.h" />
-    <ClInclude Include="CosechaProduccion\Infrastructure\DAO\GerenteFincaDAO.h" />
-    <ClInclude Include="CosechaProduccion\Infrastructure\DAO\LoteDAO.h" />
-    <ClInclude Include="CosechaProduccion\Presentation\Menus\GerenteFincaMenu.h" />
-    <ClInclude Include="Distribucion\Business\Models\Distribucion.h" />
-    <ClInclude Include="Distribucion\Business\Models\Embarcacion.h" />
-    <ClInclude Include="Distribucion\Business\Models\GerenteDistribucion.h" />
-    <ClInclude Include="Distribucion\Infrastructure\DAO\DistribucionDAO.h" />
-    <ClInclude Include="Distribucion\Infrastructure\DAO\EmbarcacionDAO.h" />
-    <ClInclude Include="Distribucion\Infrastructure\DAO\GerenteDistribucion.h" />
-    <ClInclude Include="Distribucion\Presentation\Menus\GerenteDistribucionMenu.h" />
-    <ClInclude Include="LogisticaTransporte\Business\Models\Conductor.h" />
-    <ClInclude Include="LogisticaTransporte\Business\Models\GerenteLogistica.h" />
-    <ClInclude Include="LogisticaTransporte\Business\Models\Vehiculo.h" />
-    <ClInclude Include="LogisticaTransporte\Business\Models\Viaje.h" />
-    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\ConductorDAO.h" />
-    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\GerenteLogisticaDAO.h" />
-    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\VehiculoDAO.h" />
-    <ClInclude Include="LogisticaTransporte\Infrastructure\DAO\ViajeDAO.h" />
-    <ClInclude Include="LogisticaTransporte\Presentation\Menus\ConductorMenu.h" />
-    <ClInclude Include="LogisticaTransporte\Presentation\Menus\GerenteLogisticaMenu.h" />
+    <ClInclude Include="ControlCalidad\DAO\InspeccionCalidadDAO.h" />
+    <ClInclude Include="ControlCalidad\Menus\Components\InspeccionCalidadComponent.h" />
+    <ClInclude Include="ControlCalidad\Menus\GerentePlantaMenu.h" />
+    <ClInclude Include="ControlCalidad\Models\InspeccionCalidad.h" />
+    <ClInclude Include="ControlCalidad\Services\InspeccionService.h" />
+    <ClInclude Include="CosechaProduccion\DAO\DuraznoDAO.h" />
+    <ClInclude Include="CosechaProduccion\DAO\FincaDAO.h" />
+    <ClInclude Include="CosechaProduccion\DAO\LoteDAO.h" />
+    <ClInclude Include="CosechaProduccion\Menus\Components\EnviarDuraznosInspeccionCalidad.h" />
+    <ClInclude Include="CosechaProduccion\Menus\Components\MostrarDuraznosEnFincaComponent.h" />
+    <ClInclude Include="CosechaProduccion\Menus\Components\MostrarInformacionFincaComponent.h" />
+    <ClInclude Include="CosechaProduccion\Menus\Components\RegistroDuraznoComponent.h" />
+    <ClInclude Include="CosechaProduccion\Menus\GerenteFincaMenu.h" />
+    <ClInclude Include="CosechaProduccion\Models\Durazno.h" />
+    <ClInclude Include="CosechaProduccion\Models\Finca.h" />
+    <ClInclude Include="CosechaProduccion\Models\Lote.h" />
+    <ClInclude Include="CosechaProduccion\Services\DuraznoService.h" />
+    <ClInclude Include="CosechaProduccion\Services\FincaService.h" />
+    <ClInclude Include="CosechaProduccion\Services\LoteService.h" />
+    <ClInclude Include="Distribucion\DAO\DistribucionDAO.h" />
+    <ClInclude Include="Distribucion\Menus\Components\RealizarDistribucionComponent.h" />
+    <ClInclude Include="Distribucion\Menus\GerenteDistribucionMenu.h" />
+    <ClInclude Include="Distribucion\Models\Distribucion.h" />
+    <ClInclude Include="Distribucion\Models\GerenteDistribucion.h" />
+    <ClInclude Include="Distribucion\Services\DistribucionService.h" />
+    <ClInclude Include="LogisticaTransporte\DAO\EmbarcacionDAO.h" />
+    <ClInclude Include="LogisticaTransporte\Menus\Components\EnviarEmbarcacionComponent.h" />
+    <ClInclude Include="LogisticaTransporte\Menus\GerenteLogisticaMenu.h" />
+    <ClInclude Include="LogisticaTransporte\Models\Embarcacion.h" />
+    <ClInclude Include="LogisticaTransporte\Services\EmbarcacionService.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="Shared\Database\Database.h" />
     <ClInclude Include="Shared\Database\SQLClient.h" />
+    <ClInclude Include="Shared\Util\DateTime.h" />
+    <ClInclude Include="Trazabilidad\Components\TrazabilidadComponent.h" />
+    <ClInclude Include="Trazabilidad\DAO\TrazabilidadDAO.h" />
+    <ClInclude Include="Trazabilidad\Models\Trazabilidad.h" />
+    <ClInclude Include="Trazabilidad\Services\TrazabilidadService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
